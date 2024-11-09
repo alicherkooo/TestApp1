@@ -11,7 +11,12 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("samad agah!");
-            Console.ReadKey();
+            while(true)
+            { 
+                var x = Console.ReadKey();
+                if(x.Key == ConsoleKey.NumPad0)
+                    break;
+            }
         }
     }
 }
